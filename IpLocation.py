@@ -40,6 +40,8 @@ def AsciiArt():
 
 """)
 AsciiArt()
-ip = sys.argv[1]
-
-os.system("curl https://ipinfo.io/{}".format(ip))
+def IpInfo():
+	ip = sys.argv[1]
+	os.system("curl https://ipinfo.io/{}".format(ip))
+	
+IpInfo()
