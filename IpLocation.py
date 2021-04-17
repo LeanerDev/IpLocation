@@ -1,6 +1,6 @@
 import os
 import sys
-from requests import get
+import requests
 def AsciiArt():
 	print("""
 	Discord: Leaner#4241
