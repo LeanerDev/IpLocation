@@ -41,6 +41,10 @@ def AsciiArt():
 """)
 AsciiArt()
 def IpInfo(ip=sys.argv[1]):
-        os.system("curl https://ipinfo.io/{}".format(ip))
+	r  = requests.get("https://ipinfo.io/{}".format(ip))
+	print("page response:", r)
+	print("\n")
+	print(r.text)
+	
 IpInfo()
 
